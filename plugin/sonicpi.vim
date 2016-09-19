@@ -18,7 +18,7 @@ endif
 " Contextual initialization modelled after tpope's vim-sonicpi
 function! sonicpi#detect()
   " Test if Sonic Pi is available. (Pending a PR for sonic-pi-cli.)
-  let s:activep = system(g:sonicpi_command.' version 2>/dev/null && echo -n $?')
+  let s:activep = system(g:sonicpi_command.' 2>/dev/null && echo -n $?')
   if s:activep == 0 && expand(&filetype) == 'ruby' && g:sonicpi_enabled
     if g:sonicpi_keymaps_enabled
       call s:load_keymaps()
@@ -50,7 +50,7 @@ endfunction
 " Set keymaps in Normal mode
 function! s:load_keymaps()
   nnoremap <leader>r :silent w !sonic_pi<CR>
-  nnoremap <leader>S :call system("sonic_pi stop")<CR>
+  nnoremap <leader>s :call system("sonic_pi stop")<CR>
 endfunction
 
 " Extend Ruby syntax to include Sonic Pi terms
