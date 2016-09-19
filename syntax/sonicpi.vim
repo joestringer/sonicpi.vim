@@ -40,3 +40,4 @@ syntax keyword rubyKeyword with_arg_bpm_scaling with_arg_checks with_debug
 syntax keyword rubyKeyword with_fx with_merged_synth_defaults with_sample_bpm
 syntax keyword rubyKeyword with_sample_pack with_sample_pack_as with_synth
 syntax keyword rubyKeyword with_synth_defaults with_timing_warnings with_transpose
+syntax keyword rubyKeyword tick
