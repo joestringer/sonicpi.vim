@@ -7,7 +7,7 @@ syntax keyword rubyKeyword use_bpm use_bpm_mul use_random_seed wait with_bpm
 syntax keyword rubyKeyword with_bpm_mul with_random_seed with_tempo
 syntax keyword rubyDefine define defonce
 syntax keyword rubyRepeat live_loop
-" From server/sonicpi/lib/sonicpi/mods/sound.rb
+" From server/sonicpi/lib/sonicpi/lang/sound.rb
 syntax keyword rubyKeyword __freesound __freesound_path chord chord_degree
 syntax keyword rubyKeyword complex_sampler_args? control degree
 syntax keyword rubyKeyword fetch_or_cache_sample_path find_sample_with_path
